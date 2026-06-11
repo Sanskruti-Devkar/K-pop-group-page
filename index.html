@@ -2,53 +2,112 @@
 <html>
 	<head>
 		<title>
-			
+			K-PoP Groups
 		</title>
+				 <meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 				   <script src="https://cdn.tailwindcss.com"></script>
 
 	</head>
 	<body>
-		<div class="w-full min-h-screen bg-[#0B0818] text-white p-8">
-			<div class="mb-6">
-				<h1 class="text-6xl font-bold text-purple-400">
-					K-POP
-				</h1>
+		
+		<div id="container" class="w-full min-h-screen bg-[#0B0818] text-white p-8">
+			<nav class="flex flex-col md:flex-row justify-between items-center p-4s mb-6">
+				<h1 class="text-4xl font-bold text-purple-700">K-POP</h1>
 
-				<p class="text-pink-400 text-2xl italic mt-2">
-					Universe 
-				</p>
-			</div>
+				<div class="flex flex-wrap justify-center gap-4 text-lg md:text-2xl">
+					<a href="#">Home</a>
+					<a href="#">Groups</a>
+
+					<!-- Theme Icon -->
+						<span
+							class="cursor-pointer"
+							onclick="
+							document.getElementById('container').className='w-full min-h-screen bg-[#0B0818] text-white p-8 duration-500'
+							
+							document.getElementById('groupCard').className='bg-[#151127] rounded-3xl border border-purple-900 p-8 duration-500'
+							
+							document.getElementById('asideCard').className='flex flex-col gap-6 bg-[#151127] rounded-3xl border border-purple-900 p-8 duration-500'
+							
+							document.getElementById('memCard').className=' bg-[#151127] rounded-3xl border border-purple-900 p-8 duration-500';
+							">
+								<span style="font-size:25px">&#127765;</span>
+						</span>
+						 <span
+							class="cursor-pointer"
+							onclick="
+							document.getElementById('container').className='w-full min-h-screen bg-white text-black p-8 duration-500';
+							
+							document.getElementById('groupCard').className=' bg-gray-100  rounded-3xl text-black border border-gray-300 p-8 duration-500'
+							
+							document.getElementById('asideCard').className='flex flex-col gap-6 bg-gray-100  rounded-3xl text-black border border-gray-300 p-8 duration-500'
+							
+							document.getElementById('memCard').className=' bg-gray-100  rounded-3xl text-black border border-gray-300 p-8 duration-500'
+							">
+								<span style="font-size:25px">&#9728;</span>
+						</span>
+						 <span
+							class="cursor-pointer"
+							onclick="
+							document.getElementById('container').className='w-full min-h-screen bg-pink-200 text-black p-8 duration-500'
+							
+							document.getElementById('groupCard').className=' bg-[#DA70D6]  rounded-3xl text-black border border-gray-300 p-8 duration-500'
+							
+							document.getElementById('asideCard').className='flex flex-col gap-6 bg-[#DA70D6]  rounded-3xl text-black border border-gray-300 p-8 duration-500'
+							
+							document.getElementById('memCard').className=' bg-[#DA70D6]  rounded-3xl text-black border border-gray-300 p-8 duration-500';
+							">
+								<span style="font-size:25px"> &#x1F338;</span>
+						</span>
+						<span
+							class="cursor-pointer"
+							onclick="
+							document.getElementById('container').className='w-full min-h-screen bg-[#A855F7] text-white p-8 duration-500'
+							
+							document.getElementById('groupCard').className=' bg-[#6B21A8]  rounded-3xl text-white border border-gray-300 p-8 duration-500'
+							
+							document.getElementById('asideCard').className='flex flex-col gap-6 bg-[#6B21A8]  rounded-3xl text-white border border-gray-300 p-8 duration-500'
+							
+							document.getElementById('memCard').className=' bg-[#6B21A8] rounded-3xl text-white border border-gray-300 p-8 duration-500';
+							">
+								<span style="font-size:25px"> &#128156;</span>
+						</span>
+				</div>
+			</nav>
 			
 			<!----------------Main Container img--------------->
-		<div class="bg-[#151127] rounded-3xl border border-purple-900 p-8">
+		<div id="groupCard" class="bg-[#151127] rounded-3xl border border-purple-900 p-8">
 			<div class="flex flex-col lg:flex-row items-center gap-10">
 				<div class="flex-1">
-					<h1 id="groupName" class="text-6xl font-bold bg-gradient-to-r from-pink-500 to-purple-400 bg-clip-text text-transparent">Bts</h1>
+					<h1 id="groupName" class="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-500 to-purple-400 bg-clip-text text-transparent">Bts</h1>
 					
 					<div class="w-20 h-1 bg-pink-500 rounded mt-2"></div>
 
 					
 					<p
 						id="groupDesc"
-						class="text-gray-300 mt-8 leading-8">
+						class=" mt-8 leading-8">
 						South Korean boy band formed in 2013.
 					</p>
+					
+					<span class="text-2xl md:text-4xl"> &#128156; &#128156; &#128156;</span>
 				</div>
 				 <div class="flex-1">
 
                 <img
                     id="groupImage"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVal5nYKpKanWdqohjeoFSlafclgFoDrG9NA&s"
-                    class="w-full rounded-3xl border border-purple-700  bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-50 hover:bg-indigo-500">
+                    class="w-full max-w-md mx-auto rounded-3xl border border-purple-700  bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
 
             </div>
 			</div>
 		</div>
 		<!--------------Buttons------------>
-		<div class="flex flex-wrap gap-4  mt-8 overflow-y-auto lg:px-0 lg:flex-row sm:px-40 sm:flex-col lg:font-medium sm:w-[100%] sm:font-bold lg:text-lg sm:text-4xl">
+		<div class="flex flex-wrap gap-4 justify-center gap-4 mt-6 ">
 			
 			 <button
-				class="px-6 py-3 bg-purple-700 rounded-2xl hover:outline-solid"
+				class="px-4 py-2 text-sm md:text-lg bg-purple-700 rounded-2xl w-full sm:w-auto"
 				onclick="
 				document.getElementById('groupName').innerHTML='BLACKPINK';
 				document.getElementById('groupDesc').innerHTML='Popular girl group under YG Entertainment.';
@@ -58,7 +117,7 @@
 			</button>
 			
 			<button
-				class="px-6 py-3 bg-purple-700 rounded-2xl "
+				class="px-4 py-2 text-sm md:text-lg bg-purple-700 rounded-2xl w-full sm:w-auto "
 				onclick="
 				document.getElementById('groupName').innerHTML='KatsEye';
 				document.getElementById('groupDesc').innerHTML='Popular girl group under Hybe Entertainment.';
@@ -67,7 +126,7 @@
 				KatsEye
 			</button>
 			<button
-				class="px-6 py-3 bg-purple-700 rounded-2xl "
+				class="px-4 py-2 text-sm md:text-lg bg-purple-700 rounded-2xl w-full sm:w-auto "
 				onclick="
 				document.getElementById('groupName').innerHTML='TxT';
 				document.getElementById('groupDesc').innerHTML='South Korean boy band formed by Big Hit Entertainment. ';
@@ -76,7 +135,7 @@
 				TxT
 			</button>
 			<button
-				class="px-6 py-3 bg-purple-700 rounded-2xl"
+				class="px-4 py-2 text-sm md:text-lg bg-purple-700 rounded-2xl w-full sm:w-auto"
 				onclick="
 				document.getElementById('groupName').innerHTML='TWICE';
 				document.getElementById('groupDesc').innerHTML='The Nations Girl Group';
@@ -87,7 +146,7 @@
 		
 			
 			<button
-				class="px-6 py-3 bg-purple-700 rounded-2xl"
+				class="px-4 py-2 text-sm md:text-lg bg-purple-700 rounded-2xl w-full sm:w-auto"
 				onclick="
 				document.getElementById('groupName').innerHTML='Stray Kids';
 				document.getElementById('groupDesc').innerHTML='Known for their self-producing talents and intense.';
@@ -96,7 +155,7 @@
 				Stray Kids
 			</button>
 			<button
-				class="px-6 py-3 bg-purple-700 rounded-2xl"
+				class="px-4 py-2 text-sm md:text-lg bg-purple-700 rounded-2xl w-full sm:w-auto"
 				onclick="
 				document.getElementById('groupName').innerHTML='SEVENTEEN';
 				document.getElementById('groupDesc').innerHTML='A powerhouse group celebrated for their synchronized choreography .';
@@ -105,7 +164,7 @@
 				SEVENTEEN
 			</button>
 			<button
-				class="px-6 py-3 bg-purple-700 rounded-2xl"
+				class="px-4 py-2 text-sm md:text-lg bg-purple-700 rounded-2xl w-full sm:w-auto"
 				onclick="
 				document.getElementById('groupName').innerHTML='ENHYPEN';
 				document.getElementById('groupDesc').innerHTML='Rapidly rising as one of the top acts of their generation.';
@@ -114,7 +173,7 @@
 				ENHYPEN
 			</button>
 			<button
-				class="px-6 py-3 bg-purple-700 rounded-2xl"
+				class="px-4 py-2 text-sm md:text-lg bg-purple-700 rounded-2xl w-full sm:w-auto"
 				onclick="
 				document.getElementById('groupName').innerHTML='NewJeans';
 				document.getElementById('groupDesc').innerHTML='A fourth-generation sensation.';
@@ -123,7 +182,7 @@
 				NewJeans
 			</button>
 			<button
-				class="px-6 py-3 bg-purple-700 rounded-2xl"
+				class="px-4 py-2 text-sm md:text-lg bg-purple-700 rounded-2xl w-full sm:w-auto"
 				onclick="
 				document.getElementById('groupName').innerHTML='SHINee';
 				document.getElementById('groupDesc').innerHTML='a legendary, second-generation South Korean boy group formed by SM Entertainment';
@@ -133,8 +192,326 @@
 			</button>
 		</div>
 		
+		<div class="flex flex-col lg:flex-row gap-8 mt-16">
+			<div id="asideCard" class=" flex flex-col gap-6 bg-[#151127] rounded-3xl border border-purple-900 p-8">
+				<button
+					class="px-6 py-3 bg-purple-700 rounded-2xl"
+
+					onclick="
+					document.getElementById('btsMembers').style.display='flex';
+					document.getElementById('bpMembers').style.display='none';
+					document.getElementById('txtMembers').style.display='none';
+					document.getElementById('skzMembers').style.display='none';
+					document.getElementById('katseyeMembers').style.display='none';
+					">
+					BTS
+				</button>
+				<button
+					class="px-6 py-3 bg-purple-700 rounded-2xl"
+
+					onclick="
+					document.getElementById('btsMembers').style.display='none';
+					document.getElementById('bpMembers').style.display='flex';
+					document.getElementById('txtMembers').style.display='none';
+					document.getElementById('skzMembers').style.display='none';
+					document.getElementById('katseyeMembers').style.display='none';
+					">
+					BlackPink
+				</button>
+				<button
+					class="px-6 py-3 bg-purple-700 rounded-2xl"
+
+					onclick="
+					document.getElementById('btsMembers').style.display='none';
+					document.getElementById('bpMembers').style.display='none';
+					document.getElementById('txtMembers').style.display='flex';
+					document.getElementById('skzMembers').style.display='none';
+					document.getElementById('katseyeMembers').style.display='none';
+					">
+					TxT
+				</button>
+				<button
+					class="px-6 py-3 bg-purple-700 rounded-2xl"
+
+					onclick="
+					document.getElementById('btsMembers').style.display='none';
+					document.getElementById('bpMembers').style.display='none';
+					document.getElementById('txtMembers').style.display='none';
+					document.getElementById('skzMembers').style.display='flex';
+					document.getElementById('katseyeMembers').style.display='none';
+					">
+					Red Velvet
+				</button>
+				<button
+					class="px-6 py-3 bg-purple-700 rounded-2xl"
+
+					onclick="
+					document.getElementById('btsMembers').style.display='none';
+					document.getElementById('bpMembers').style.display='none';
+					document.getElementById('txtMembers').style.display='none';
+					document.getElementById('skzMembers').style.display='none';
+					document.getElementById('katseyeMembers').style.display='flex';
+					">
+					KatsEye
+				</button>
+				
+				
+			</div>
+			<div id="memCard" class="bg-[#151127] rounded-3xl border border-purple-900 p-8 pe-10">
+				<div  id="btsMembers" class="flex flex-wrap justify-center text-center gap-6 overflow-x-auto">
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://static.wikia.nocookie.net/the_kpop_house/images/7/78/Rm.jpg/revision/latest?cb=20200330154504" 
+						onclick="document.getElementById('memName').innerHTML='RM';
+							document.getElementById('memDesc').innerHTML='RM (formerly Rap Monster), is a South Korean rapper, <br>songwriter, and record producer. He is the leader of South Korean boy band BTS.';
+							document.getElementById('memImage').src='https://newsimg.koreatimes.co.kr/2026/03/20/e6e4ff65-f4f1-49da-a546-3c115ef31370.jpg?w=728';
+							">
+						<span class="">RM</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://external-preview.redd.it/bts-jin-is-announced-as-the-new-model-for-ottogis-jin-ramen-v0-V48x-JNbhSHEnmiiYYbRB6OT5SOZIz4ApvLEru38Q38.jpg?auto=webp&s=5635b68495cf0e7d7c0e0225a9830d34f40eaf84" 
+						onclick="document.getElementById('memName').innerHTML='Jin';
+							document.getElementById('memDesc').innerHTML='Kim Seok-jin (Korean: 김석진 ; born December 4, 1992), known professionally as Jin, <br>is a South Korean singer.';
+							document.getElementById('memImage').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLGfPPI-K3frScRGBDFqn38bZDNbwRvrbqSA&s';
+							">
+						<span class="">Jin</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://filmfare.wwmindia.com/content/2024/nov/suga11731133235.jpg" 
+						onclick="document.getElementById('memName').innerHTML='Suga';
+							document.getElementById('memDesc').innerHTML='Min Yoon-gi, known professionally by his stage names Suga and Agust D,<br> is a South Korean rapper, songwriter and record producer. BTS.';
+							document.getElementById('memImage').src='https://assets.teenvogue.com/photos/5fbbd66767fb27b4c0301920/16:9/w_2560%2Cc_limit/GettyImages-1207754980.jpg';
+							">
+						<span class="">Suga</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYv3Qo8bnqBO3YmLw8daPxB8ZMUKw0ScEk5A&s" 
+						onclick="document.getElementById('memName').innerHTML='J-Hope';
+							document.getElementById('memDesc').innerHTML='Jung Ho-seok, known professionally as J-Hope, <br>is a South Korean rapper, singer, songwriter, dancer, and record producer.';
+							document.getElementById('memImage').src='https://bangtannow.com/wp-content/uploads/2025/02/jhope-jung-hoseok-1024x682.jpeg';
+							">
+						<span class="">J-Hope</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuF9W8yXR-9Z5PiA2egAV9efY5Zzq859P6zw&s" 
+						onclick="document.getElementById('memName').innerHTML='Jimin';
+							document.getElementById('memDesc').innerHTML='Park Ji-min, known mononymously as Jimin, is a South Korean singer, songwriter, and dancer. <br> In 2013, he  made his debut as a member of the South Korean boy band BTS, under the <br>record label  Big Hit Entertainment.';
+							document.getElementById('memImage').src='https://www.billboard.com/wp-content/uploads/2023/03/Jimin-of-BTS-press-courtesy-of-bighit-2023-billboard-1548.jpg?w=942&h=628&crop=1';
+							">
+						<span class="">Jimin</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCu5lp9Xto8P4j2TZBqLRa2uAJXyOZ6ocJ0Q&s" 
+						onclick="document.getElementById('memName').innerHTML='V';
+							document.getElementById('memDesc').innerHTML='Kim Tae-hyung, known professionally as V, is a South Korean singer. In 2013, he made <br> his debut  as a member of the South Korean boy  band BTS, under Big Hit Entertainment.';
+							document.getElementById('memImage').src='https://cf-images.assettype.com/outlookindia/import/uploadimage/library/16_9/16_9_5/IMAGE_1645098840.jpeg?w=801&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0';
+							">
+						<span class="">V</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://www.bollywoodhungama.com/wp-content/uploads/2020/11/BTS-Jungkook-reveals-Stay-was-originally-created-for-his-mixtape-but-how-it-was-perfect-for-their-album-BE-.jpg" 
+						onclick="document.getElementById('memName').innerHTML='Junkook';
+							document.getElementById('memDesc').innerHTML='Jeon Jung-kook, known professionally as Jung Kook, is a South Korean  singer and songwriter.<br> He rose to prominence as a member and  vocalist of South Korean boy band BTS. ';
+							document.getElementById('memImage').src='https://images.lifestyleasia.com/wp-content/uploads/sites/7/2023/08/31223938/Jungkook-songs-1-1600x900.jpg';
+							">
+						<span class="">Junkook</span>
+					</span>
+					
+					
+					
+					
+				</div>
+				
+				<!------------------------Blackpink----------------------->
+				<div id="bpMembers" class="flex flex-wrap justify-center text-center gap-6 " style="display:none">
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2020/06/08/4b0bdfc6-a639-11ea-8ea0-d7434be00753_image_hires_121748.jpg" 
+						onclick="document.getElementById('memName').innerHTML='Jisoo';
+							document.getElementById('memDesc').innerHTML='Kim Ji-soo, known mononymously as Jisoo, is a South Korean<br> singer, songwriter, and actress.';
+							document.getElementById('memImage').src='https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/d8/images/methode/2020/06/08/4b0bdfc6-a639-11ea-8ea0-d7434be00753_image_hires_121748.jpg?itok=UM5zeMi-&v=1591589877';
+							">
+						<span class="">Jisoo</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSamkWGggqxLpmnELKI8Rofanl7sJtjJBqKuA&s" 
+						onclick="document.getElementById('memName').innerHTML='Rose';
+							document.getElementById('memDesc').innerHTML='Roseanne Park, known mononymously as Rosé,<br> is a New Zealand and South Korean singer and songwriter. ';
+							document.getElementById('memImage').src='https://assets.pikiran-rakyat.com/crop/0x0:850x614/720x0/webp/photo/2021/09/20/1077451176.png';
+							">
+						<span class="">Rose</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPYEDlK3SgU-E5gSmo41lhG0RB4kgypOLsMw&s" 
+						onclick="document.getElementById('memName').innerHTML='Lisa';
+							document.getElementById('memDesc').innerHTML='Lalisa Manobal, known mononymously as Lisa, is a Thai rapper, singer, dancer, and actress. ';
+							document.getElementById('memImage').src='https://media.vanityfair.fr/photos/696491a3724e6d8eba4c4cc3/16:10/w_2560%2Cc_limit/GettyImages-2255234214.jpg';
+							">
+						<span class="">Lisa</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1622595474i/31427833._SY540_.jpg" 
+						onclick="document.getElementById('memName').innerHTML='Jennie';
+							document.getElementById('memDesc').innerHTML='Jennie Kim, known mononymously as Jennie, is a South Korean singer, rapper, songwriter, <br>and actress. ';
+							document.getElementById('memImage').src='https://people.com/thmb/YJr0UyNUgdczRZHr6yVmspdtdfc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(760x393:762x395)/jennie-blackpink-billboard-magazine-010925-1-5c1654466a944091bedce19fd219d757.jpg';
+							">
+						<span class="">Jennie</span>
+					</span>
+				</div>
+				<!------------------------TXT------------------------>
+				<div id="txtMembers" class="flex flex-wrap justify-center text-center gap-6 " style="display:none">
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4mWsorVLF1D0_ol3RWEeEbJVV7_6rxzHk0w&s" 
+						onclick="document.getElementById('memName').innerHTML='Soobin';
+							document.getElementById('memDesc').innerHTML='Choi Soo-bin, known mononymously as Soobin, is a South Korean<br> singer and songwriter. ';
+							document.getElementById('memImage').src='https://dam.mediacorp.sg/image/upload/s--l2UCgdox--/c_fill,g_auto,h_622,w_830/f_auto,q_auto/v1/mediacorp/cna/image/2024/11/20/img_9961.jpg?itok=EQQ-o01d';
+							">
+						<span class="">Soobin</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://i.pinimg.com/474x/0c/3c/d5/0c3cd5e2e5c71baf0e91e4329f443484.jpg" 
+						onclick="document.getElementById('memName').innerHTML='yeonjun';
+							document.getElementById('memDesc').innerHTML='Choi Yeon-jun, known mononymously as Yeonjun, is a South Korean <br> singer and songwriter.';
+							document.getElementById('memImage').src='https://fotos.perfil.com/2025/05/23/trim/950/534/yeonjun-2028560.jpg';
+							">
+						<span class="">yeonjun</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuNz5RXOM_sOlfYSbbcp3Q_sSpsv08XPcXsA&s" 
+						onclick="document.getElementById('memName').innerHTML='Beomgyu';
+							document.getElementById('memDesc').innerHTML='Choi Beom-gyu, known mononymously as Beomgyu, is a South Korean <br> singer and songwriter.';
+							document.getElementById('memImage').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTcYhNGf38jbgSxnxIE5xBy99lSxRollYHgw&s';
+							">
+						<span class="">Beomgyu</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://i.scdn.co/image/ab67616100005174a5b87707e4bf8a851cfa40a6" 
+						onclick="document.getElementById('memName').innerHTML='Taehyun';
+							document.getElementById('memDesc').innerHTML='Kang Tae-hyun, known mononymously as Taehyun, is a South Korean <br> singer and songwriter.';
+							document.getElementById('memImage').src='https://image-cdn.hypb.st/https%3A%2F%2Fbae.hypebeast.com%2Ffiles%2F2026%2F02%2F24%2Ftaehyun-fi.jpg?w=960&cbr=1&q=90&fit=max';
+							">
+						<span class="">Taehyun</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202510/huening-kai-102745659-3x4.jpg?VersionId=oiwAUova0AhA.gkwLARMQVnXhR1uNdX_" 
+						onclick="document.getElementById('memName').innerHTML='Hueningkai';
+							document.getElementById('memDesc').innerHTML='Hueningkai (휴닝카이) is a South Korean-American singer-songwriter and producer under <br> BigHit Music. ';
+							document.getElementById('memImage').src='https://i0.wp.com/kstationtv.com/wp-content/uploads/2025/01/huening-kai-1-e1735899152680.jpg?fit=1104%2C1570&ssl=1';
+							">
+						<span class="">Hueningkai</span>
+					</span>
+				</div>
+				<!---------------------Stry Kids------------------->
+				<div id="skzMembers" class="flex flex-wrap justify-center text-center gap-6 " style="display:none">
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://static.wixstatic.com/media/41a9eb_c26e0c57308045dcbe6a0cf8f9b8d105~mv2.jpg/v1/fill/w_1365,h_1129,al_c/41a9eb_c26e0c57308045dcbe6a0cf8f9b8d105~mv2.jpg" 
+						onclick="document.getElementById('memName').innerHTML='Bae Irene';
+							document.getElementById('memDesc').innerHTML='Bae Joo-hyun, better known by her stage name Irene, is a South Korean singer and actress.';
+							document.getElementById('memImage').src='https://nationaltoday.com/wp-content/uploads/2022/10/456841018-min-1200x834.jpg';
+							">
+						<span class="">Bae Irene</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn5hPaEpe4XPl8G8f5ixZ32gxPqksgQXyQ2A&s" 
+						onclick="document.getElementById('memName').innerHTML='Yeri';
+							document.getElementById('memDesc').innerHTML='Kim Ye-rim, better known by her stage name Yeri, is a South Korean singer  and actress.<br> She is a member of South Korean girl group Red Velvet.';
+							document.getElementById('memImage').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQlhXsU0V7VIudiOrd7wf-E98mFvR0lsbi6w&s';
+							">
+						<span class="">Yeri</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://i.pinimg.com/736x/3d/fd/df/3dfddf2e381a395d2b53b76dfbb02e5a.jpg" 
+						onclick="document.getElementById('memName').innerHTML='Seulgi';
+							document.getElementById('memDesc').innerHTML='Kang Seul-gi, known mononymously as Seulgi, is a South Korean singer and dancer.';
+							document.getElementById('memImage').src='https://www.nme.com/wp-content/uploads/2022/03/red-velvet-seulgi-tests-positive-covid-19-20220330.jpg';
+							">
+						<span class="">Seulgi</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz2xgsjKJpNB-m8S_TjKKUQ9anMgTvndIBxw&s" 
+						onclick="document.getElementById('memName').innerHTML='Wendy Son';
+							document.getElementById('memDesc').innerHTML='Shon Seung-wan, known professionally as Wendy, is a South Korean singer.';
+							document.getElementById('memImage').src='https://www.nme.com/wp-content/uploads/2021/04/wendy-like-water-sm-entertainment-040621.jpg';
+							">
+						<span class="">Wendy Son</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo03gdtZhYnlN2lA-PQIscDw2p0G9uUa1J7g&s" 
+						onclick="document.getElementById('memName').innerHTML='Joy';
+							document.getElementById('memDesc').innerHTML='Park Soo-young, better known by her stage name Joy, is a South Korean singer, actress,<br> and host.';
+							document.getElementById('memImage').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo03gdtZhYnlN2lA-PQIscDw2p0G9uUa1J7g&s';
+							">
+						<span class="">Joy</span>
+					</span>
+				</div>
+				<!----------------------------KatsEye-------------------------->
+					<div id="katseyeMembers" class="flex flex-wrap justify-center text-center gap-6 " style="display:none">
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3rO8wVemdfmvaBij9XadrWltB4QXBV1xhbQ&s" 
+						onclick="document.getElementById('memName').innerHTML='Sophia ';
+							document.getElementById('memDesc').innerHTML='Sophia Elizabeth Guevara Laforteza is a Filipino and American singer. In 2024, she made <br> her debut as  the leader of the girl group Katseye.';
+							
+							document.getElementById('memImage').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyz54sLeDSffLPDgHEjlE5ejMxMQGpnWHqeA&s';
+							">
+						<span class="">Sophia </span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://pbs.twimg.com/media/GWR9Bn5WYAAKApg.jpg" 
+						onclick="document.getElementById('memName').innerHTML='Manon';
+							document.getElementById('memDesc').innerHTML='Meret Manon Sarpong Bannerman, also known mononymously as Manon, is a Swiss singer.';
+							document.getElementById('memImage').src='https://image-cdn.hypb.st/https%3A%2F%2Fbae.hypebeast.com%2Ffiles%2F2026%2F02%2F23%2Fkatseye-manon-bannerman-hiatus-girl-group-break-solo-album-info.jpg?w=960&cbr=1&q=90&fit=max';
+							">
+						<span class="">Manon</span>
+					</span>
+					
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDHqS2JL8pRXSRXwPEanSQAuuPy2t44yFBzQ&s" 
+						onclick="document.getElementById('memName').innerHTML='Megan';
+							document.getElementById('memDesc').innerHTML='Megan Meiyok Skiendiel is an American singer, dancer and actress. She is best known <br> as a member of Katseye.';
+							document.getElementById('memImage').src='https://images.preview.ph/preview/dynsto/1749266108-megan-nm.jpg';
+							">
+						<span class="">Megan</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://i0.wp.com/urbanasian.com/wp-content/uploads/2023/09/IMG_5573.jpg" 
+						onclick="document.getElementById('memName').innerHTML='Lara Raj';
+							document.getElementById('memDesc').innerHTML='Lara Rajagopalan, known professionally as Lara Raj, is an American singer. In 2024, <br> she made her debut as a member of Katseye.';
+							document.getElementById('memImage').src='https://assets.vogue.in/photos/68515d628f243d431caac276/4:3/w_1080,h_810,c_limit/Lara%20Raj.jpg';
+							">
+						<span class="">Lara Raj</span>
+					</span>
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7VxeN_FMqCdvqMn-NdnWinb32tkpl5JYotg&s" 
+						onclick="document.getElementById('memName').innerHTML='Daniela';
+							document.getElementById('memDesc').innerHTML='Daniela Andrea Avanzini Llorente is an American singer and dancer. She is best known <br> as a member of the girl group Katseye.';
+							document.getElementById('memImage').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZdV7OdCtDKliCpcaPqhfsA8NRKeLafInxNg&s';
+							">
+						<span class="">Daniela</span>
+					</span> 
+					<span>
+						<img class="w-16 h-16 md:w-20 md:h-20 rounded-full" src="https://static.wikia.nocookie.net/dream-academy/images/0/0b/BEAUTIFUL_CHAOS_Yoonchae.jpg/revision/latest?cb=20250916141622" 
+						onclick="document.getElementById('memName').innerHTML='Yoonchae';
+							document.getElementById('memDesc').innerHTML='Jeong Yoonchae is a korean dancer/singer, part of the global girl group Katseye, created <br> by the company HYBExGEFFEN. ';
+							document.getElementById('memImage').src='https://assets.teenvogue.com/photos/68375fc7be788e64270a2128/16:9/w_2560%2Cc_limit/FINAL-KATSEYE-TEENVOGUE-WM-23.jpg';
+							">
+						<span class="">Yoonchae</span>
+					</span>
+				</div>
+				
+				
+				<div class="flex flex-wrap gap-8 mt-8">
+					<div>
+						<img id="memImage"  class="w-[300px] h-[210px] rounded-3xl" src="https://newsimg.koreatimes.co.kr/2026/03/20/e6e4ff65-f4f1-49da-a546-3c115ef31370.jpg?w=728">
+					</div>
+					<div>
+						<h1 id="memName"  class="text-6xl font-bold bg-gradient-to-r from-pink-500 to-purple-400 bg-clip-text text-transparent">RM</h1>
+						<p id="memDesc" class=" mt-8 leading-8">RM (formerly Rap Monster), is a South Korean rapper, <br>songwriter, and record producer. He is the leader of South Korean boy band BTS.</p>
+					</div>
+				</div>
+			</div>
+			
 		</div>
+		
 		</div>
+		
 		
 		
 		
