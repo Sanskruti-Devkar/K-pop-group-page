@@ -24,6 +24,6 @@ Structuring a small web development project.
 
 ##  Live Demo
 View the project here:
- https://sanskruti-devkar.github.io/K-pop-group-page/
+https://sanskruti-devkar.github.io/K-pop-group-page/
  
 
